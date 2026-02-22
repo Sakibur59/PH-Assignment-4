@@ -37,15 +37,15 @@
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-5">
         <div class="bg-[#FFFFFF] rounded-md p-5">
           <p class="text-[#323B49]">Total</p>
-          <p class="text-[#002C5C] font-bold text-[24px]">0</p>
+          <p class="text-[#002C5C] font-bold text-[24px]" id="total-job">0</p>
         </div>
         <div class="bg-[#FFFFFF] rounded-md p-5">
           <p class="text-[#323B49]">Interview</p>
-          <p class="text-[24px] text-[#10B981] font-bold">0</p>
+          <p class="text-[24px] text-[#10B981] font-bold" id="interview-count">0</p>
         </div>
         <div class="bg-[#FFFFFF] rounded-md p-5">
           <p class="text-[#323B49]">Rejected</p>
-          <p class="text-[24px] text-[#EF4444] font-bold">0</p>
+          <p class="text-[24px] text-[#EF4444] font-bold" id="rejected-count">0</p>
         </div>
       </div>
       <hr class="mt-10 text-[#E6E7E9]" />
@@ -57,7 +57,7 @@
           <p class="text-[#002C5C] font-bold text-2xl">Available Jobs</p>
         </div>
         <div>
-          <span class="text-[#64748B] font-medium text-[1rem]">0</span>
+          <span class="text-[#64748B] font-medium text-[1rem]" id="available-job">0</span>
           <span class="text-[#64748B] font-medium text-[1rem]">jobs</span>
         </div>
       </div>
@@ -429,5 +429,6 @@
         </div>
       </section>
     </main>
+    <script src="js/script.js"></script>
   </body>
 </html>
