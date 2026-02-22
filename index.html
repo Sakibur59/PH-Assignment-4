@@ -50,7 +50,6 @@
       </div>
       <hr class="mt-10 text-[#E6E7E9]" />
     </header>
-
     <main>
       <div class="flex justify-between items-center mt-10">
         <div>
@@ -68,7 +67,7 @@
           All
         </button>
         <button onclick="toggle('interview-btn')" id="interview-btn"
-          class="px-5 py-2 font-medium border-gray-300 text-[#64748B] border-1 rounded-md bg-white mr-4 cursor-pointer"
+          class="px-5 py-2 font-medium border-gray-300 text-[#64748B] border-1 rounded-md bg-white mr-4 cursor-pointer "
         >
           Interview
         </button>
@@ -78,9 +77,18 @@
           Rejected
         </button>
       </div>
-
+      <div id="empty" class="empty-interview-card hidden">
+        <div class="flex justify-center">
+          <img src="images/jobs.png" alt="">
+        </div>
+          <div class="text-center">
+            <h2 class="text-[#002C5C] text-[24px] font-semibold">No jobs available</h2>
+            <p class="text-[#64748B] ">Check back soon for new job opportunities</p>
+          </div>
+        
+      </div>
       <section id="filtered-card" class="hidden">
-
+        
       </section>
 
       <section id="all-card" class="bg-white rounded-md">
@@ -108,12 +116,12 @@
                 Work on products used by millions of users worldwide.
               </p>
               <button
-                class="int-btn text-[#10B981] bg-white px-4 py-2 border-1 rounded-md mr-3 font-bold cursor-pointer"
+                class="int-btn text-[#10B981] bg-white px-4 py-2 border-1 rounded-md mr-3 font-bold cursor-pointer hover:bg-green-500 hover:text-white"
               >
                 INTERVIEW
               </button>
               <button
-                class="rej-btn text-[#EF4444] bg-white px-4 py-2 border-1 rounded-md font-bold cursor-pointer"
+                class="rej-btn text-[#EF4444] bg-white px-4 py-2 border-1 rounded-md font-bold cursor-pointer hover:bg-red-500 hover:text-white"
               >
                 REJECTED
               </button>
@@ -152,12 +160,12 @@
                 have portfolio and experience with modern web design trends.
               </p>
               <button
-                class="int-btn text-[#10B981] bg-white px-4 py-2 border-1 rounded-md mr-3 font-bold cursor-pointer"
+                class="int-btn text-[#10B981] bg-white px-4 py-2 border-1 rounded-md mr-3 font-bold cursor-pointer hover:bg-green-500 hover:text-white"
               >
                 INTERVIEW
               </button>
               <button
-                class="rej-btn text-[#EF4444] bg-white px-4 py-2 border-1 rounded-md font-bold cursor-pointer"
+                class="rej-btn text-[#EF4444] bg-white px-4 py-2 border-1 rounded-md font-bold cursor-pointer hover:bg-red-500 hover:text-white"
               >
                 REJECTED
               </button>
@@ -195,12 +203,12 @@
                 skills: D3.js, React, and strong analytical thinking.
               </p>
               <button
-                class="int-btn text-[#10B981] bg-white px-4 py-2 border-1 rounded-md mr-3 font-bold cursor-pointer"
+                class="int-btn text-[#10B981] bg-white px-4 py-2 border-1 rounded-md mr-3 font-bold cursor-pointer hover:bg-green-500 hover:text-white"
               >
                 INTERVIEW
               </button>
               <button
-                class="rej-btn text-[#EF4444] bg-white px-4 py-2 border-1 rounded-md font-bold cursor-pointer"
+                class="rej-btn text-[#EF4444] bg-white px-4 py-2 border-1 rounded-md font-bold cursor-pointer hover:bg-red-500 hover:text-white"
               >
                 REJECTED
               </button>
@@ -238,12 +246,12 @@
                 AWS. Work with modern DevOps practices and cloud infrastructure.
               </p>
               <button
-                class="int-btn text-[#10B981] bg-white px-4 py-2 border-1 rounded-md mr-3 font-bold cursor-pointer"
+                class="int-btn text-[#10B981] bg-white px-4 py-2 border-1 rounded-md mr-3 font-bold cursor-pointer hover:bg-green-500 hover:text-white"
               >
                 INTERVIEW
               </button>
               <button
-                class="rej-btn text-[#EF4444] bg-white px-4 py-2 border-1 rounded-md font-bold cursor-pointer"
+                class="rej-btn text-[#EF4444] bg-white px-4 py-2 border-1 rounded-md font-bold cursor-pointer hover:bg-red-500 hover:text-white"
               >
                 REJECTED
               </button>
@@ -282,12 +290,12 @@
                 expertise required.
               </p>
               <button
-                class="int-btn text-[#10B981] bg-white px-4 py-2 border-1 rounded-md mr-3 font-bold cursor-pointer"
+                class="int-btn text-[#10B981] bg-white px-4 py-2 border-1 rounded-md mr-3 font-bold cursor-pointer hover:bg-green-500 hover:text-white"
               >
                 INTERVIEW
               </button>
               <button
-                class="rej-btn text-[#EF4444] bg-white px-4 py-2 border-1 rounded-md font-bold cursor-pointer"
+                class="rej-btn text-[#EF4444] bg-white px-4 py-2 border-1 rounded-md font-bold cursor-pointer hover:bg-red-500 hover:text-white"
               >
                 REJECTED
               </button>
@@ -326,12 +334,12 @@
                 and professional development opportunities.
               </p>
               <button
-                class="int-btn text-[#10B981] bg-white px-4 py-2 border-1 rounded-md mr-3 font-bold cursor-pointer"
+                class="int-btn text-[#10B981] bg-white px-4 py-2 border-1 rounded-md mr-3 font-bold cursor-pointer hover:bg-green-500 hover:text-white"
               >
                 INTERVIEW
               </button>
               <button
-                class="rej-btn text-[#EF4444] bg-white px-4 py-2 border-1 rounded-md font-bold cursor-pointer"
+                class="rej-btn text-[#EF4444] bg-white px-4 py-2 border-1 rounded-md font-bold cursor-pointer hover:bg-red-500 hover:text-white"
               >
                 REJECTED
               </button>
@@ -370,12 +378,12 @@
                 equity package included.
               </p>
               <button
-                class="int-btn text-[#10B981] bg-white px-4 py-2 border-1 rounded-md mr-3 font-bold cursor-pointer"
+                class="int-btn text-[#10B981] bg-white px-4 py-2 border-1 rounded-md mr-3 font-bold cursor-pointer hover:bg-green-500 hover:text-white"
               >
                 INTERVIEW
               </button>
               <button
-                class="rej-btn text-[#EF4444] bg-white px-4 py-2 border-1 rounded-md font-bold cursor-pointer"
+                class="rej-btn text-[#EF4444] bg-white px-4 py-2 border-1 rounded-md font-bold cursor-pointer hover:bg-red-500 hover:text-white"
               >
                 REJECTED
               </button>
@@ -412,12 +420,12 @@
                 We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.
               </p>
               <button
-                class="int-btn text-[#10B981] bg-white px-4 py-2 border-1 rounded-md mr-3 font-bold cursor-pointer"
+                class="int-btn text-[#10B981] bg-white px-4 py-2 border-1 rounded-md mr-3 font-bold cursor-pointer hover:bg-green-500 hover:text-white"
               >
                 INTERVIEW
               </button>
               <button
-                class="rej-btn text-[#EF4444] bg-white px-4 py-2 border-1 rounded-md font-bold cursor-pointer"
+                class="rej-btn text-[#EF4444] bg-white px-4 py-2 border-1 rounded-md font-bold cursor-pointer hover:bg-red-500 hover:text-white"
               >
                 REJECTED
               </button>

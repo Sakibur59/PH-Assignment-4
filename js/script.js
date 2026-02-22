@@ -22,7 +22,7 @@ count();
 let allBtn = document.getElementById("all-btn");
 let interviewBtn = document.getElementById("interview-btn");
 let rejectedBtn = document.getElementById("rejected-btn");
-
+let empty = document.getElementById("empty");
 function toggle(id){
     allBtn.classList.remove('bg-[#3B82F6]','text-white')
     interviewBtn.classList.remove('bg-[#3B82F6]','text-white')
@@ -44,6 +44,7 @@ function toggle(id){
     } else if (id == 'all-btn'){
         allCard.classList.remove('hidden');
         filterCard.classList.add('hidden');
+        empty.classList.add('hidden')
     } else if (id == 'rejected-btn'){
         allCard.classList.add('hidden');
         filterCard.classList.remove('hidden');
@@ -82,13 +83,15 @@ main.addEventListener('click',function (event){
         int_btn,
         rej_btn
     }
-    
+   
    const nameExist= interviewList.find(item=> item.name == cardInfo.name);
+   
     
    if(!nameExist){
     interviewList.push(cardInfo);
    }
-   rejectedList = rejectedList.filter(item=> item.name != cardInfo.name)
+   rejectedList = rejectedList.filter(item=> item.name != cardInfo.name);
+    
    count();
    if(currentStatus == "rejected-btn")
    renderRejected();
@@ -140,9 +143,12 @@ main.addEventListener('click',function (event){
 
 const filterCard = document.getElementById("filtered-card");
 
-function renderInterview(){
-    filterCard.innerHTML = '';
 
+function renderInterview(){
+    filterCard.innerHTML = ``;
+    if(interviewList.length == 0){
+        empty.classList.remove('hidden')
+    }
     for(let interview of interviewList){
         
         let div = document.createElement('div');
@@ -169,12 +175,12 @@ function renderInterview(){
                 ${interview.details}
               </p>
               <button
-                class="int-btn text-[#10B981] bg-white px-4 py-2 border-1 rounded-md mr-3 font-bold cursor-pointer"
+                class="int-btn text-[#10B981] bg-white px-4 py-2 border-1 rounded-md mr-3 font-bold cursor-pointer "
               >
                 INTERVIEW
               </button>
               <button
-                class="rej-btn text-[#EF4444] bg-white px-4 py-2 border-1 rounded-md font-bold cursor-pointer"
+                class="rej-btn text-[#EF4444] bg-white px-4 py-2 border-1 rounded-md font-bold cursor-pointer hover:bg-red-500 hover:text-white"
               >
                 REJECTED
               </button>
@@ -193,8 +199,10 @@ function renderInterview(){
 }
 
 function renderRejected(){
-    filterCard.innerHTML = '';
-
+    filterCard.innerHTML = ``;
+if(rejectedList.length == 0){
+        empty.classList.remove('hidden')
+}
     for(let rejected of rejectedList){
         
         let div = document.createElement('div');
@@ -221,7 +229,7 @@ function renderRejected(){
                 ${rejected.details}
               </p>
               <button
-                class="int-btn text-[#10B981] bg-white px-4 py-2 border-1 rounded-md mr-3 font-bold cursor-pointer"
+                class="int-btn text-[#10B981] bg-white px-4 py-2 border-1 rounded-md mr-3 font-bold cursor-pointer hover:bg-green-500 hover:text-white"
               >
                 INTERVIEW
               </button>
